@@ -51,6 +51,7 @@ p {
 main {
     display: grid;
     grid-template-columns: 60% 40%;
+    max-width: fit-content;
 }
 
 .card-1 {
