@@ -20,6 +20,11 @@ body {
     padding-top: 1em;
     text-align: center;
 }
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: .5em 1em 1em;
+}
 
 .nav {
     background: #222;
@@ -58,7 +63,7 @@ main {
     box-shadow: var(--shadow);
     grid-column: 1 / 2;
     border: 1px solid var(--primary);
-    margin: 1.7rem 1em 0 1em;
+    margin: 1em .5em 1em 1em;
     border-radius: 10px;
 }
 
@@ -121,7 +126,7 @@ figcaption {
     box-shadow: var(--shadow);
     grid-column: 2 / 3;
     border: 1px solid var(--primary);
-    margin: 1.7em 1em 0em .2em;
+    margin: 1em 1em 1em 0;
     border-radius: 10px;   
 }
 
@@ -142,5 +147,11 @@ footer {
     text-align: center;
     padding: 1em 0 1em 0;
     font-size: 1em;
-    margin-top: 2em;
+}
+
+footer p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    line-height: 1.2;
+}
 }
