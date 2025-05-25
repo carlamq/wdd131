@@ -49,6 +49,7 @@ main {
     color:#000;
 }
 main {
+    display: grid;
     max-width: 740px;
 }
 img {
