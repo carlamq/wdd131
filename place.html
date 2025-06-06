@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <meta name="description" content="A collection of places with images and descriptions.">
+    <meta name="author" content="Carla Maetzin Ramirez Quintanar">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Japan</h1>
+        <h2>日本</h2>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-tokyo-large.webp" media="(min-width: 700px)">
+                <img src="images/hero-tokyo-small.webp" alt="Asakusa Temple in Tokyo, Japan" width="550" height="733">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><strong>Area:</strong> 378 000 sq km</li>
+                <li><strong>Population:</strong> 123 150 536</li>
+                <li><strong>Capital:</strong> Tokyo 東京</li>
+                <li><strong>Languages:</strong> Japanese 日本語</li>
+                <li><strong>Currency:</strong> Yen</li>
+                <li><strong>Time Zone:</strong> UTC+9</li>
+                <li><strong>Calling Code:</strong> +81</li>
+                <li><strong>Internet TLD:</strong> .jp</li>
+            </ul>
+        </section>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <img src="images/forecast-icon.svg" alt="forecast-icon" width="60">
+            </div>
+            <ul class="weather-list">
+                <li><strong>Temperature:</strong> 10°C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> 9.8°C</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Carla Maetzin Ramirez Quintanar 🌍 Mexico </p>
+        <p class="last-mod">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
