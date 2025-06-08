@@ -15,6 +15,10 @@ function calculateWindChill(temp, wind) {
         ? (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1)
         : temp.toFixed(1);
 }
+//const computeWindChill = function (windSpeed, temperature) {
+    // Fahrenheit Only
+   // return 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16)) + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
+ // };
 
 const windChill = calculateWindChill(temperature, windSpeed);
 
