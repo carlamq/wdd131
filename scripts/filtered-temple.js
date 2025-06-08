@@ -55,7 +55,7 @@ const temples = [
         dedicated: "1974, November, 19",
         area: 156558,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/washington-d.c.-temple/washington-d.c.-temple-14992-main.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
     },
     {
         templeName: "Lima Perú",
@@ -106,7 +106,7 @@ function createTempleCard(temple) {
         <p><span class="label">Location:</span> ${temple.location}</p>
         <p><span class="label">Dedicated:</span> ${temple.dedicated}</p>
         <p><span class="label">Area:</span> ${temple.area.toLocaleString()} sq ft</p>
-        <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy">
+        <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy" width="400" height="250">
       </section>
     `;
 }

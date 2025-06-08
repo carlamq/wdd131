@@ -18,6 +18,7 @@ body {
     grid-gap: 1rem;
     padding: 20px;
     border: 1px solid #61054d;
+    width: 100%;
 }
 
 header,
