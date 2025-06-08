@@ -123,17 +123,17 @@ function filterTemples(parameter) {
         case "old":
             filtered = temples.filter(t => {
                 const year = parseInt(t.dedicated.split(",")[0]);
-                return year < 1995;
+                return year < 1990;
             });
             break;
         case "new":
             filtered = temples.filter(t => {
                 const year = parseInt(t.dedicated.split(",")[0]);
-                return year > 1995;
+                return year > 2000;
             });
             break;
         case "large":
-            filtered = temples.filter(t => t.area > 10000);
+            filtered = temples.filter(t => t.area > 90000);
             break;
         case "small":
             filtered = temples.filter(t => t.area < 10000);
