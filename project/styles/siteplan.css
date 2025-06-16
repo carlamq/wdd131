@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #F5F2EB;
+    --secondary-color: #180C42;
+    --accent1: #DABFFF;
+    --accent2: #ffff;
+    --accent3: #2582f5;
+    --accent4: #000000;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--primary-color);
+}
+.header {
+    background: var(--secondary-color);
+    color: var(--accent2);
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 8px solid var(--accent1);
+}
+h1, h3 {
+    font-family: "Italiana", sans-serif;
+    text-align: center;
+}
+main p {
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 0.5rem;
+}
+.sections {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+.section {
+    background: var(--accent1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.section h3 {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.7rem .2rem;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-left: -10px;
+}
+.section ul{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 1em;
+}
+  
+.wireframe1, .wireframe2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-wireframe {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.wireframe1 img, .wireframe2 img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+footer {
+    background: var(--secondary-color);
+    color: var(--accent2);
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 1em;
+    }
+
+footer p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    line-height: 1.2;
+}
