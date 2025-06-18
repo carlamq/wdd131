@@ -1,0 +1,109 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 440px;
+}
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+.prf fieldset {
+    margin: 2rem 0;
+    border: 1px solid #dddd;
+    background-color: #edeaea;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    max-width: 440px;;
+}
+div,
+p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 0;
+}
+.prf label,
+.prf div{
+    display: block;
+    /*lo hace parada la cosa block*/
+    padding-top: 1rem;
+    color: black;
+    font-size: 1rem;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+.optional {
+    font-size: 0.8rem;
+    color: blue;
+}
+.prf input[type="text"],
+.prf input[type="date"],
+.prf select,
+.prf textarea{
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: rgb(52, 5, 74);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.prf input[type="radio"],
+.prf input[type="checkbox"] {
+    margin-right: 6px;
+}
+header{
+    border: none;
+    background: #61054d;
+    color: #ffff;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: .5rem 2% .5rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+main h1 {
+    font-size: 1.5rem;
+    color: #61054d;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.prf input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(rgb(113, 32, 108), rgb(158, 36, 91));
+    color: #ffff;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: .8rem;
+    width: 96%;
+    /*96 + 2% + 2% da el  100% */
+    max-width: 400px;
+    margin: .5rem 2% .5rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+footer {
+    background: #61054d;
+    color: #f7def2;
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 1em;
+}
+
+footer p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    line-height: 1.2;
+}

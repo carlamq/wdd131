@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="Product Review Form Activity">
+    <meta name="author" content="Carla Maetzin Ramirez Quintanar">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="prf">
+            <fieldset>
+                <label>Product Name*
+                    <select name="product" required>
+                        <option value="">Choose a Product &#9662;</option>
+                    </select>
+                </label>
+                <div class="rating">Overall Rating*</div>
+                <label><input id="rating1" type="radio" name="stars" value="one" required> &star;</label>
+                <label><input id="rating2" type="radio" name="stars" value="two" required> &star;&star;</label>
+                <label><input id="rating3" type="radio" name="stars" value="three" required> &star;&star;&star;</label>
+                <label><input id="rating4" type="radio" name="stars" value="four" required> &star;&star;&star;&star;</label>
+                <label><input id="rating5" type="radio" name="stars" value="five" required> &star;&star;&star;&star;&star;</label>
+
+                <label>Date of Installation<input id="date" type="date" name="completeDate"></label>
+                <div>Which features did you find useful in the product?</div>
+                <p>(Check all that apply)</p>
+                <label><input id="features1" type="checkbox" name="durability" value="yes"> Durability</label>
+                <label><input id="features2" type="checkbox" name="easeofuse" value="yes"> Easy of Use</label>
+                <label><input id="features3" type="checkbox" name="performance" value="yes"> Performance</label>
+                <label><input id="features4" type="checkbox" name="design" value="yes"> Design</label>
+
+
+                <label>Written Review:<span class="optional">(optional)</span></label>
+                <textarea id="writtenReview" name="writtenReview" rows="5" cols="40"></textarea>
+                <label> Your Name <span class="optional">(optional)</span><input type="text" name="yname"></label>
+                <input type="submit" value="Post Review">
+            </fieldset>         
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Carla Maetzin Ramirez Quintanar 🌍 Mexico </p>
+        <p class="last-mod">Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+
+</html>
