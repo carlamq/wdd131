@@ -41,3 +41,16 @@ const today = new Date();
 year.innerHTML = `${today.getFullYear()}`;
 
 document.getElementById("lastModified").innerHTML = document.lastModified;
+
+document.addEventListener("DOMContentLoaded", () => {
+    if (window.location.pathname.endsWith("review.html")) {
+        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+        reviewCount++;
+        localStorage.setItem("reviewCount", reviewCount);
+
+        //for main
+        let counter = document.createElement("p");
+        counter.textContent = `You have submitted ${reviewCount} review(s).`;
+                document.querySelector("main").appendChild(counter);
+            }
+        });
