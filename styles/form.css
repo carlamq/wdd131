@@ -3,6 +3,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 440px;
+    font-family: "Labrada", serif;
 }
 main {
     padding: 0 2%;
