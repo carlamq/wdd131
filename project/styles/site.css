@@ -1,0 +1,425 @@
+:root {
+    --primary-color: #F5F2EB;
+    --secondary-color: #180C42;
+    --accent1: #DABFFF;
+    --accent2: #ffff;
+    --accent3: rgba(230, 230, 250, 0.7);
+    --accent4: #000000;
+    --accent5: #fdce61;
+    --button-color: #FFD700CC;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+header,
+main {
+    margin: 0 auto;
+}
+header {
+    background: var(--secondary-color);
+    color: var(--accent1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 8px solid var(--accent5);
+}
+h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-family: "Italiana", serif;
+    letter-spacing: 1px;
+}
+/*------Navigation-------- */
+.nav {
+    list-style: none;
+}
+.nav.show {
+    display: block;
+    background: var(--accent5);
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.nav li {
+    display: none;
+}
+
+.nav a {
+    display: block;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav a:hover {
+    border: 1px solid var(--secondary-color);
+}
+
+.active {
+    color: var(--accent3);
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: transparent;
+    color: var(--accent1);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#menu::before {
+    content: "\2630";
+    /* Unicode character for hamburger menu */
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+/*------herodiv-------- */
+.herodiv {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.herodiv picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: var(--accent3);
+}
+
+.hero-content h1,
+.hero-content p,
+.hero-content a {
+    margin: 10px 0;
+    text-align: center;
+}
+.hero-content p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+}
+
+.hero-content a {
+    background: var(--button-color);
+    color: var(--secondary-color);
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-content a:hover {
+    background: var(--accent2);
+}
+
+/*-----section what-is------- */
+.what-is {
+    padding: 2em 0;
+    text-align: center;
+}
+.what-is h2,
+.what-is p {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 0.3em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.what-is-content p {
+    border-top: var(--accent4) 1px solid;
+    width: 100%;
+    padding-top: 1em;
+    font-size: 1.1rem;
+}
+
+
+
+/*--------benefits section-------- */
+.benefits {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.benefits h2,
+.benefits p {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 0.3em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-------action section-------- */
+.action {
+    padding: 2em 0;
+    text-align: center;
+    background-color: var(--accent3);
+}
+.action h2,
+.action p {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 0.3em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.action a,
+.about a,
+.herodiv-thanks a {
+    display: inline-block;
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.action a:hover,
+.about a:hover,
+.herodiv-thanks a:hover {
+    background-color: var(--accent2);
+}
+
+/*----footer-------- */
+footer {
+    background: var(--secondary-color);
+    color: var(--accent1);
+    text-align: center;
+    padding: 1em 0 1em 0;
+    font-size: 1.2em;
+    border-top: 8PX solid var(--accent5);
+}
+footer a {
+    color: var(--accent1);
+}
+
+footer p {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    line-height: 1.2;
+}
+
+/*-----learning section-------- */
+.info {
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+}
+.exercise {
+    background: linear-gradient(135deg, #E6E6FA 60%, #b6f1db 100%);
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(167, 199, 231, 0.2);
+    padding: 32px 24px;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.exercise h2 {
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.exercise p,
+.info p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.exercise img {
+    display: block;
+    margin: 0 auto 24px auto;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(255, 215, 0, 0.15);
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.exercise ol {
+    background: rgba(255, 255, 255, 0.85);
+    border-left: 4px solid var(--accent5);
+    border-radius: 12px;
+    padding: 18px 28px;
+    margin: 0 auto 24px auto;
+    max-width: 500px;
+    color: #4B4B7A;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(167, 199, 231, 0.08);
+}
+
+.exercise ol li {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+/*-----form section-------- */
+.join-form h2 {
+    font-family: 'Italiana', serif;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.news {
+    background: var(--secondary-color);
+    max-width: 480px;
+    margin: 40px auto;
+    padding: 30px 28px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(168, 230, 207, 0.3);
+    color: var(--accent1);
+}
+
+.news fieldset {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.news legend {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.news label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 1rem;
+
+}
+
+.news label input[type="text"],
+.news label input[type="email"],
+.news textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-top: 6px;
+    border: 2px solid var(--accent5);
+    border-radius: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.news .optional {
+    font-size: 0.85rem;
+    color: var(--accent5);
+    font-style: italic;
+    margin-left: 6px;
+}
+
+.news input[type="submit"] {
+    background: var(--button-color);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 14px 0;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.news input[type="submit"]:hover {
+    background: var(--accent2);
+}
+/*-----about section-------- */
+
+.about {
+    background: linear-gradient(135deg, var(--accent3) 60%, var(--accent1) 100%);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(168, 230, 207, 0.3);
+    padding: 36px 28px;
+    max-width: 650px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-size: 1.13rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.about img {
+    display: block;
+    margin: 0 auto 18px auto;
+    border-radius: 50%;/*For circular*/
+    border: 4px solid var(--accent5);
+    box-shadow: 0 8px 24px rgba(168, 230, 207, 0.3);
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+/*-----thank you-------- */
+.herodiv-thanks {
+    background: var(--accent3);
+    padding: 40px 32px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(207, 213, 27, 0.15);
+}

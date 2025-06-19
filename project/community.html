@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Vibes Path</title>
+    <meta name="description"
+        content="High Vibes Path - A journey through vibrant landscapes and uplifting experiences.">
+    <meta name="author" content="Carla Maetzin Ramirez Quintanar">
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/site-large.css">
+    <script src="scripts/site.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Nunito:wght@200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>High Vibes Path</h1>
+        <a id="menu" href="#"></a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" title="Home" class="active">Home</a></li>
+                <li><a href="learn-more.html">Learn More</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="herodiv">
+            <picture>
+                <source srcset="images/community-large.webp" media="(min-width: 700px)">
+                <img src="images/community-small.jpg" alt="Meditation reference image" loading="lazy" width="540" height="750">
+            </picture>
+            <div class="hero-content">
+                <h1>We are a Community!</h1>
+                <p>The best part is that we support each other on our journeys. Together, we can achieve more. Join us!</p>
+                <p>By subscribing to our newsletter, you can stay updated on our latest events and resources.</p>
+            </div>
+        </div>
+        <div class="contact">
+            <section class="join-form">
+                <h2>Join Our Community and Newsletter</h2>
+                <form method="get" action="thanks.html" class="news">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label> Name* <input type="text" name="fname" required></label>
+                        <label> Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <label>Let us know your thoughts: <span class="optional">(optional)</span></label>
+                        <textarea id="writtenReview" name="writtenReview" rows="5" cols="40"></textarea>
+                    </fieldset>
+                <input type="submit" value="Join Community">              
+                </form>
+            </section>
+            <section class="about">
+                <h2>Know the Author of this community</h2>
+                <p>Hello! I'm Carla, the creator of the High Vibes Path community. My passion for meditation and mindfulness has inspired me to build this space where we can all learn and grow together. I'm excited to share resources, host events, and support each other on our journeys. Thank you for being here!</p>
+                <img src="images/profile.webp" alt="Carla Maetzin Ramirez Quintanar" loading="lazy" width="285" height="300">
+                <p>Feel free to reach out in Facebook if you have any questions or suggestions! We will try to respond as quickly as possible.</p>
+                <a href="https://www.facebook.com/kujira.experiences" target="_blank">Contact me on Facebook</a>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> High Vibes Path. All rights reserved.🧘‍♀️</p>
+        <a href="source.html">Sources</a>
+    </footer>
+</body>
+    
+</html>

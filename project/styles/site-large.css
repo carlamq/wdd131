@@ -1,0 +1,76 @@
+@media (min-width: 740px) {
+    .herodiv {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 1900px;
+        margin: 0 auto;
+        gap: 32px;
+    }
+
+    .hero-image {
+        border-radius: 16px;
+    }
+
+    .hero-content {
+        max-width: 500px;
+        margin-top: 0;
+        text-align: left;
+        padding: 40px 32px;
+        background: var(--accent3);
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+    }
+
+    .what-is {
+        padding: 3em 0;
+    }
+    .what-is h2,
+    .what-is p {
+        width: 50%;
+    }
+    .what-is-content p {
+        border-top: none;
+    }
+    .what-is-content {
+        display: flex;
+        gap: 2em;
+        margin-top: 1em;
+        border: 2px solid #333;
+        border-radius: 12px;
+        padding: 2em;
+        background: var(--accent2);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #benefits-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    #benefits-list .benefit {
+        flex: 1 1 0;
+        max-width: 300px;
+        padding: 1em;
+        background: var(--accent2);
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 2rem;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 2rem;
+    }
+}
